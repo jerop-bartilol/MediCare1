@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header" android:padding="24dp" android:paddingTop="48dp" android:paddingBottom="30dp" android:textColor="#fff" android:textSize="24sp" android:textStyle="bold"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:id="@+id/fields" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp"/>
+    </ScrollView>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="16dp" android:background="#fff">
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnDelete" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="56dp" android:text="Delete" android:textColor="@color/red" android:visibility="gone" app:cornerRadius="16dp" android:layout_marginEnd="10dp"/>
+        <com.google.android.material.button.MaterialButton android:id="@+id/btnSave" android:layout_width="0dp" android:layout_weight="1" android:layout_height="56dp" android:text="Save" app:cornerRadius="16dp"/>
+    </LinearLayout>
+</LinearLayout>

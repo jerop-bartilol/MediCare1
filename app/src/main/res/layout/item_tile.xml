@@ -1,0 +1,6 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_margin="8dp" app:cardCornerRadius="20dp" app:cardElevation="3dp" app:cardBackgroundColor="#fff" android:clickable="true" android:foreground="?attr/selectableItemBackground">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:orientation="vertical" android:padding="18dp">
+        <TextView android:id="@+id/tvTop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/teal" android:textSize="32sp" android:textStyle="bold"/>
+        <TextView android:id="@+id/tvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:textColor="#475569" android:textSize="13sp"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

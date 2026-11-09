@@ -1,0 +1,10 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp" app:cardCornerRadius="18dp" app:cardElevation="2dp" app:cardBackgroundColor="#fff" android:clickable="true" android:foreground="?attr/selectableItemBackground">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvIcon" android:layout_width="48dp" android:layout_height="48dp" android:background="@drawable/bg_circle" android:backgroundTint="#CCFBF1" android:gravity="center" android:textSize="22sp"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="14dp" android:orientation="vertical">
+            <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/ink" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvSub" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#64748B" android:textSize="13sp"/>
+        </LinearLayout>
+        <TextView android:id="@+id/tvBadge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingHorizontal="10dp" android:paddingVertical="4dp" android:textColor="#fff" android:textSize="11sp" android:textStyle="bold"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

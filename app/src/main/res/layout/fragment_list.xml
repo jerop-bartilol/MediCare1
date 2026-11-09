@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@drawable/bg_header" android:orientation="vertical" android:padding="20dp" android:paddingTop="44dp" android:paddingBottom="28dp">
+        <TextView android:id="@+id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#fff" android:textSize="26sp" android:textStyle="bold"/>
+        <com.google.android.material.textfield.TextInputLayout style="@style/Widget.Material3.TextInputLayout.FilledBox" app:boxBackgroundColor="#fff" app:boxCornerRadiusTopStart="16dp" app:boxCornerRadiusTopEnd="16dp" app:boxCornerRadiusBottomStart="16dp" app:boxCornerRadiusBottomEnd="16dp" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="🔍  Search">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/etSearch" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/></com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <TextView android:id="@+id/tvEmpty" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="32dp" android:text="No records yet.\nTap + to add one." android:textColor="#64748B"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv" android:layout_width="match_parent" android:layout_height="match_parent" android:clipToPadding="false" android:padding="12dp"/>
+</LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_margin="20dp" android:src="@drawable/ic_add" app:tint="#fff" app:backgroundTint="@color/coral"/>
+</FrameLayout>
